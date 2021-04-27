@@ -1,4 +1,4 @@
-- hosts:  labservers
+- hosts: all 
   become: yes
   tasks:
   - name: Install httpd package
