@@ -1,0 +1,11 @@
+- name: Verify the Apache Service
+  hosts: localhost
+  become: no  
+  tasks:
+     - name: Ensure the webserver is reachable
+       uri:
+         url: http://ansiblelab4
+         status_code: 200
+
+
+         
