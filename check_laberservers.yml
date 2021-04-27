@@ -1,0 +1,6 @@
+---
+- hosts: labservers
+  tasks: 
+  - name:  Check connectivity
+    ping:
+
