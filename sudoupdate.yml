@@ -1,0 +1,8 @@
+- hosts: all
+  become: yes
+  tasks:
+    - name: Update sudo package
+      yum:
+        name: sudo
+        state: latest
+
