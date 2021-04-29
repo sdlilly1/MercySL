@@ -1,0 +1,9 @@
+# sudocheck.yml
+- hosts: all
+  become: yes
+  tasks:
+     - name: check for sudo package
+       yum:
+         name: sudo
+         state: present
+
