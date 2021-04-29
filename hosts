@@ -1,3 +1,16 @@
 [labservers]
 ansiblelab4
 
+
+[windows2012]
+ansiblewin
+
+[windows2012:vars]
+ansible_connection=winrm
+ansible_user=winansible
+ansible_password=AnsibleClass1!
+ansible_winrm_server_cert_validation=ignore
+ansible_become=false
+
+
+

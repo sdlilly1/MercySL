@@ -1,0 +1,11 @@
+- hosts: labservers
+  become: yes
+  roles:
+   - app-tier
+
+- hosts: labservers
+  become: yes
+  roles:
+   - db-tier
+
+
